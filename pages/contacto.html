@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Maricona</title>
+</head>
+<body>
+     <!-- fila de logo + nav --> 
+    <header>
+    <nav>
+        <ul>
+            <li>MARICONA</li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#">CONTACTO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="descubrir.html">DESCUBRIR</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+        </ul>
+    </nav>
+    </header>
+	<section id="grilla-contacto" class="portada-contacto">
+        <div class="titulo-contacto-grid">
+		    <h2 class="título-contacto">CONTACTO</h2>
+        </div>
+	<!-- formulario de contacto -->
+
+		<article class="formulario-contacto">
+			<form action="enviar.php" method="post" enctype="text/plain">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="Nombre"><br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido"><br>
+                <label for="correo">Correo</label>
+                <input type="email" name="correo"><br>
+                <label for="tel">Teléfono</label>
+                <input type="number" name="tel"><br>
+                <label for="file">Adjuntar archivo</label>
+                <input type="file" name="file"><br>
+                <label for="comentarios">Comentarios</label><br>
+                <textarea name="" id="" cols="30" rows="6"></textarea>
+				<br>
+                <input type="submit" value="Enviar"><br>
+
+				<p class="pregunta-contacto">¿Qué  preferís?</p>
+				<select name="productos" id="Productos"> 
+					<option value="blusas">Blusas</option>
+					<option value="tops">Tops</option>
+					<option value="abrigos">Abrigos</option>
+                    <option value="accesorios">Accesorios</option>
+				</select>
+				<div>¿Te gustaría recibir Info sobre Maricona?<br>
+				<input type="submit" value="Quiero recibir info">
+				<input type="reset" value="No, gracias">
+			</form>
+		</article>
+        <img class="imagen-contacto" src="../imagenes/Camperón.jpg" alt="Camperon tejido" height="400" width="auto"> 
+	</section>
+	<!-- cierre de form contacto -->
+    <br>
+    <br>
+    <br>
+    <footer class="footer" id="Maricona">
+        <h5>Maricona <br>Prendas de diseño en crochet</h5>
+        <h5>info@maricona.com.ar</h5>
+      <nav>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.facebook.com/">facebook</a>
+      </nav>
+    </footer>
+    </div>
+    </body>
+    </html>
