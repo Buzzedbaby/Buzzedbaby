@@ -16,6 +16,7 @@ li {
 }
 li a {
     text-decoration: none;
+   
 }
 li a:hover {
     color: yellow;
@@ -82,6 +83,20 @@ ul li {
     text-align: center;
     font-family:'Share Tech Mono', monospace;
     color: yellow;
+    text-transform: uppercase;
+    animation-duration: 2s;
+    animation-name: aparece;
+    animation-delay: 4s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite ;
+}
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .titulonosotros {
     grid-area: titulo;
@@ -105,9 +120,9 @@ ul li {
       "pregunta foto"
       "footer footer";
       grid-template-columns: 50% 50%;
-      background-color: lightskyblue;
+  background-color: lightskyblue;
 }
-@media only screen and (max-width: 915px){
+@media only screen and (max-width: 1005px){
   #grilla-contacto {
     display: grid;
     grid-template-areas: 
@@ -117,11 +132,17 @@ ul li {
         "foto"
         "footer ";
         grid-template-columns: 1fr;
+        background-color: lightskyblue;
   }
+  .portada-contacto {
+    background-color: lightskyblue;
+    width: 100%;
+    height: auto
+}
 }
 .portada-contacto {
     background-color: lightskyblue;
-    width: auto;
+    width: 100%;
     height: auto
 }
 .titulo-contacto.grid {
@@ -134,6 +155,20 @@ ul li {
     margin: 2px;
     color: yellow;
     font-family:'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    animation-duration: 2s;
+    animation-name: aparece;
+    animation-delay: 4s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite ;
+}
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .formulario-contacto {
     grid-area: formulario;
@@ -153,6 +188,12 @@ ul li {
     top: 1px;
     left: 800px;
     top: 150px;
+    padding-left: 50px;
+    transition: 0.9s;
+
+}
+.imagen-contacto:hover{
+    transform: scale(0.9);
 }
 .portada-nueva-coleccion {
     background-color: lightskyblue;
@@ -177,7 +218,7 @@ ul li {
     font-size: 25px;
     font-family:'Share Tech Mono', monospace;
     text-align: center;
-    margin-right: 180px
+    margin-right: 180px;
 }
 .portada-principal {
     background-color: lightskyblue;
@@ -233,12 +274,27 @@ header {
     color: yellow;
     text-align: center;
     padding: 1px 1px 1px 1px;
+    text-transform: uppercase;
+    animation-duration: 2s;
+    animation-name: aparece;
+    animation-delay: 4s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite ;
+}
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .barra-vertical {
     grid-area: vertical;
     background-color: yellow;
 }
 .vertical-texto {
+    grid-area: vertical;
     text-align: center;
     transform: rotate(270deg);
     font-size: 30px;
@@ -247,31 +303,31 @@ header {
 }
 section {
     grid-area: section;
-    background-color: lightskyblue;
+    background-color: lightskyblue
 }
-.subtitulo {
+.subtitulo{
     font-size: 30px;
     font-family:'Share Tech Mono', monospace;
     font-weight: 600;
     color:white;
+    text-align: center
+}
+.botondescubrir{
+    grid-area: boton;
     text-align: center;
-    padding: 1px 1px 1px 1px;
     background-color: lightskyblue;
 }
-.boton-descubrir {
-    grid-area: boton;
+.boton-descubrir{
     font-size: 30px;
     font-family:'Share Tech Mono', monospace;
-    font-weight: 600;
-    text-align: center;
-    padding-left: 190px;
-    background-color: lightskyblue;
+    font-weight: 600px
 }
 .imagen-portada {
     grid-area: foto;
     padding: 45px 45px 0px 45px;
     background-color: lightskyblue;
 }
+
 .barra-abajo {
     grid-area: abajo;
     background-color: yellow;
@@ -295,8 +351,7 @@ footer {
     background-color: lightskyblue;
     width: 100%;
     margin: 0;
-    padding: 0;
-    
+    padding: 0
 }
 .titulo-productos {
     font-size: 40px;
@@ -304,6 +359,20 @@ footer {
     margin: 2px;
     color: yellow;
     font-family:'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    animation-duration: 2s;
+    animation-name: aparece;
+    animation-delay: 4s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite ;
+}
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .galeria {
     width: 100%;
@@ -311,8 +380,8 @@ footer {
     min-height: 100vh;
     background-color: lightskyblue;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 260px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 260px);
     grid-gap: 10px
 }
 .item {
@@ -326,55 +395,84 @@ footer {
     background-image: url(imagenes/Campera\ Flores.jpg);
     background-size: cover;
     background-position: center;
+    transition: 0.9s;
+}
+.item1:hover{
+    transform: scale(0.9);
 }
 .item2 {
     background-image: url(imagenes/Campera\ flores\ rosa.jpeg);
     background-size: cover;
     background-position: center;
+    transition: 0.9s;
+}
+.item2:hover{
+    transform: scale(0.9);
 }
 .item3 {
     background-image: url(imagenes/Camperón.jpg);
     background-size: cover;
     background-position: center;
+    transition: 0.9s;
+}
+.item3:hover{
+    transform: scale(0.9);
 }
 .item4 {
     background-image: url(imagenes/Chaleco\ campo.jpg);
     background-size: cover;
     background-position: center;
+    transition: 0.9s;
+}
+.item4:hover{
+    transform: scale(0.9);
 }
 .item5 {
     background-image: url(imagenes/Chaleco\ nubes.jpg);
     background-size: cover;
     background-position: center;
+    transition: 0.9s;
+}
+.item5:hover{
+    transform: scale(0.9);
 }
 .item6 {
     background-image: url(imagenes/Conjunto\ rosa\ bebé.jpg);
     background-size: cover;
     background-position: center;
+    transition: 0.9s;
 }
-@media only screen and (min-width: 250px) and (max-width: 340px){
-    .galeria{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 260px);
-    }
+.item6:hover{
+    transform: scale(0.9);
 }
-@media only screen and (min-width: 340px){
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 260px);
+@media only screen and (max-width: 720px){
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 360px);}
+    .item1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
-}
-@media only screen and (min-width: 480px){
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 260px);
+    .item2 {
+        grid-column: 2/3 ;
+        grid-row: 1/2;
     }
-}
-@media only screen and (min-width: 630px){
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 260px);
+    .item3 {
+        grid-column: 1/2 ;
+        grid-row: 2/3;
     }
+    .item4 {
+        grid-column: 2/3 ;
+        grid-row: 2/3 ;
+    }
+    .item5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .item6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        }
 }
 .item1 {
     grid-column: 1/2;
@@ -401,10 +499,11 @@ footer {
     grid-row: 3/4 ;
 }
 .portada-descubrir {
-  background-color: lightskyblue;
   width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
+  background-color: lightskyblue;
 }
 .titulo-descubrir {
   font-size: 40px;
@@ -412,6 +511,20 @@ footer {
   margin: 2px;
   color: yellow;
   font-family:'Share Tech Mono', monospace;
+  text-transform: uppercase;
+    animation-duration: 2s;
+    animation-name: aparece;
+    animation-delay: 4s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite ;
+}
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .galeria-descubrir {
   width: 100%;
@@ -420,7 +533,7 @@ footer {
   background-color: lightskyblue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(2, 260px);
+  grid-template-rows: 360px;
   grid-gap: 10px
 }
 .foto {
@@ -432,23 +545,43 @@ footer {
 }
 .foto1 {
   background-image: url(imagenes/Camperón.jpg);
+  height: 360px;
   background-size: cover;
   background-position: center;
+  transition: 0.9s;
+}
+.foto1:hover{
+    transform: scale(0.9);
 }
 .foto2 {
   background-image: url(imagenes/Campera\ flores\ rosa.jpeg);
+  height: 360px;  
   background-size: cover;
   background-position: center;
+  transition: 0.9s;
+}
+.foto2:hover{
+    transform: scale(0.9);
 }
 .foto3 {
   background-image: url(imagenes/Chaleco\ nubes.jpg);
+  height: 360px;
   background-size: cover;
   background-position: center;
+  transition: 0.9s;
+}
+.foto3:hover{
+    transform: scale(0.9);
 }
 .foto4 {
   background-image: url(imagenes/Chaleco\ campo.jpg);
+  height: 360px;
   background-size: cover;
   background-position: center;
+  transition: 0.9s;
+}
+.foto4:hover{
+    transform: scale(0.9);
 }
 .foto1 {
   grid-column: 1/2;
@@ -466,9 +599,24 @@ footer {
   grid-column: 4/5 ;
   grid-row: 1/3;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 720px){
   .galeria-descubrir {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, 260px);
-  }
+      grid-template-rows: repeat(2, 360px);}
+      .foto1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      .foto2 {
+        grid-column: 2/3 ;
+        grid-row: 1/2;
+      }
+      .foto3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .foto4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
 }
