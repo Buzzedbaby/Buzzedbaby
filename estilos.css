@@ -221,7 +221,6 @@ ul li {
     margin-right: 180px;
 }
 .portada-principal {
-    background-color: lightskyblue;
     height: auto;
     width: 100%;
 }
@@ -234,7 +233,7 @@ ul li {
         "vertical abajo abajo"
         "footer footer footer";
         grid-template-columns: 7% 1fr 1fr;
-        grid-template-rows: 200px 200px 200px 100px 50px;
+        grid-template-rows: 200px 100px 200px 100px 50px;
         background-color: lightskyblue;
 }
 @media only screen and (max-width: 1100px){
@@ -247,7 +246,7 @@ ul li {
           "vertical abajo"
           "footer footer";
         grid-template-columns: 7% 1fr;
-        grid-template-rows: 200px 200px 100px 700px 100px
+        grid-template-rows: 200px 100px 100px 700px 100px
     }
 }
 @media only screen and (max-width: 610px){
@@ -260,7 +259,7 @@ ul li {
         "vertical abajo"
         "footer footer";
       grid-template-columns: 7% 1fr;
-      grid-template-rows: 200px 200px 100px 600px;
+      grid-template-rows: 200px 100px 100px 600px;
   }
 }
 header {
@@ -292,6 +291,7 @@ header {
 .barra-vertical {
     grid-area: vertical;
     background-color: yellow;
+    background-image: linear-gradient(pink , lightskyblue , yellow)
 }
 .vertical-texto {
     grid-area: vertical;
@@ -331,6 +331,7 @@ section {
 .barra-abajo {
     grid-area: abajo;
     background-color: yellow;
+    background-image: linear-gradient(to left , pink , lightskyblue , yellow);
     width: 100%;
     height: 100px;
     font-family:'Share Tech Mono', monospace;
